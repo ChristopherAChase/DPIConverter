@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DPI Converter</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="conversion.js"></script>
+    </head>
+
+    <body>
+        <h2>DPI Converter</h2>
+
+        <form id="conversionForm" onsubmit="event.preventDefault(); storeConversion();">
+            <label for="numberToConvert">
+                Enter number to convert:
+                <input type="number" name="numberToConvert" id="numberToConvert">
+            </label>
+        </form>
+
+        <table id="conversionTable">
+            <thead>
+                <th>203dpi</th>
+                <th>305dpi</th>
+            </thead>
+            <tbody id="conversionTable_Body">
+                <!-- This is where javascript will insert the rows with conversion data -->
+            </tbody>
+        </table>
+    </body>
+
+</html>
